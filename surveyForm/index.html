@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" class="labels">Name <input type="text" id="name" placeholder="Enter your name"
+        required></label>
+    <label id="email-label" class="labels">Email <input type="email" id="email" placeholder="Enter your email"
+        required></label>
+    <label id="number-label" class="labels">Age <input type="number" id="number" placeholder="Age" min="16"
+        max="120"></label>
+    Which option best describes your current role?
+    <select id="dropdown">
+      <option>Select current role</option>
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+
+    <div class="optionBox">
+      Would you recommend freeCodeCamp to a friend?
+      <div class="options">
+        <label class="optionTxt" for="definitely"><input class="radioBt" value="definitely" type="radio" id="definitely"
+            name="recommend">
+          <p>Definitely</p>
+        </label>
+        <label class="optionTxt" for="maybe"><input value="maybe" class="radioBt" type="radio" id="maybe"
+            name="recommend">
+          <p>Maybe</p>
+        </label>
+        <label class="optionTxt" for="notsure"><input value="notsure" class="radioBt" type="radio" id="notsure"
+            name="recommend">
+          <p>Not sure</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="featureBox">
+      What is your favorite feature of freeCodeCamp?
+      <select id="feature">
+        <option>Select an option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+      </select>
+    </div>
+
+    <div class="projectBox">
+      <div class="projectTitle">What would you like to see improved? (Check all that apply)</div>
+      <div class="projectOpt">
+        <label for="frontend"><input type="checkbox" id="frontend" value="frontent">
+          <p>Front-End Projects</p>
+        </label>
+        <label for="backend"><input type="checkbox" id="backend" value="backend">
+          <p>Back-End Projects</p>
+        </label>
+        <label for="data-science"><input type="checkbox" id="data-science" value="data-science">
+          <p> Data Science</p>
+        </label>
+        <label for="web3"><input type="checkbox" id="web3" value="web3">
+          <p>Web 3.0</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="comment">
+      <p>Any comments or suggestions?</p>
+      <textarea rows="5" cols="20">Enter Your Comments here</textarea>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+</body>
+
+</html>
